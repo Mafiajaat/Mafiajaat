@@ -7,10 +7,10 @@ import datetime
 import os
 
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7389477321:AAHtqDrl28BsYbuIZUWBuBXklikvPq-bYJo:')
+bot = telebot.TeleBot('7066185031:AAFfQsRT0DFp2xKBoMrvalUppegXYk_IbNA')
 
 # Admin user IDs
-admin_id = ["1210786221"]
+admin_id = ["1027086274"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -285,8 +285,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @AatanK_GHOST
-Official Channel :- https://t.me/+mkVSrgFQBJY5Yzll
+Buy From :- @YouTubeMAFIA
+Official Channel :- https://t.me/MAFIAOFFICIALHACKS
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -303,7 +303,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''👋🏻Welcome to Your Home, {user_name}! Feel Free to Explore.
 🤖Try To Run This Command : /help 
-✅Join :- https://t.me/+mkVSrgFQBJY5Yzll'''
+✅Join :- https://t.me/MAFIAOFFICIALHACKS'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
@@ -331,7 +331,7 @@ Day-->250 Rs ✔️
 Week-->800 Rs ✔️
 Month-->1600 Rs ✔️
 
-Dm to Buy @AaTanK_GHOST
+Dm to Buy @YouTubeMAFIA
 '''
     bot.reply_to(message, response)
 
